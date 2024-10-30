@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Freedium Redirector",
+  "version": "1.0",
+  "description": "Automatically redirects Medium articles to Freedium",
+  "permissions": [
+    "webNavigation",
+    "webRequest",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "*://*.medium.com/*",
+    "https://medium.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+}
